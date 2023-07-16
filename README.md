@@ -34,7 +34,7 @@ Um den Code in diesem Repository auszuführen, sind die folgenden Voraussetzunge
 ## Verwendung
 
 Um das Modell zu trainieren, führen Sie den folgenden Befehl aus:
-python Train.py
+```python Train.py``` 
 
 ## Modell
 
