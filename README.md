@@ -46,6 +46,8 @@ Das Modell besteht aus einem Encoder und einem Decoder. Der Encoder besteht aus 
 ## Ergebnisse
 
 Die Ergebnisse des Trainings und der Rekonstruktion werden im save_dir-Ordner gespeichert. Sie können die trainierten Modelle und die rekonstruierten Bilder in diesem Ordner finden.
+Es werden die orginalen, rekonstruierten und SSIM Bilder nebeneinander angezeigt.
+![Alt-Text](Pfad/zum/Bild)
 
 ## Autoren 
 
