@@ -34,6 +34,9 @@ Um den Code in diesem Repository auszuführen, sind die folgenden Voraussetzunge
 ## Verwendung
 
 Um das Modell zu trainieren, führen Sie den folgenden Befehl aus:
+```python Train.py```
+
+Um das Modell zu testen, führen Sie den folgenden Befehl aus:
 ```python Train.py``` 
 
 ## Modell
