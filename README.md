@@ -47,7 +47,7 @@ Das Modell besteht aus einem Encoder und einem Decoder. Der Encoder besteht aus 
 
 Die Ergebnisse des Trainings und der Rekonstruktion werden im save_dir-Ordner gespeichert. Sie können die trainierten Modelle und die rekonstruierten Bilder in diesem Ordner finden.
 Es werden die orginalen(jupyterlab), rekonstruierten und SSIM Bilder nebeneinander angezeigt bzw. gespeichert.
-![Alt-Text](https://github.com/JohannesVos/WiFo/blob/main/train_image.png)
+![Alt-Text]([https://github.com/JohannesVos/WiFo/blob/main/train_image.png](https://github.com/JohannesVos/WiFo/blob/main/Screenshot%202023-07-24%20195410.png))
 
 ## Autoren 
 
