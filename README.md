@@ -45,8 +45,7 @@ Für die Datenvorverarbeitung und statistische Verunreinigung der Trainingsdaten
 
 4. Führen Sie das Training aus, indem Sie die train.py Datei ausführen. Der Autoencoder wird auf dem Trainingsdatensatz trainiert, und der Fortschritt wird auf der Konsole ausgegeben. Das Modell wird auch regelmäßig auf dem Testdatensatz evaluiert und das beste Modell wird gespeichert. Wichtig ist zu beachten, dass alle Pfade korrekt angegeben sind.
 
-5. 
-
+5. Testen Sie das trainierte Modell mithilfe der Datei [Test.py](https://github.com/JohannesVos/WiFo/blob/main/src/Test.py) Beachten Sie hierbei das Sie die richtigen Pfade zu dem Modell und den Ordner der Testdaten angeben.
 
 ## Modell
 
