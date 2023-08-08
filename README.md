@@ -65,7 +65,8 @@ Es werden die orginalen, rekonstruierten und SSIM Bilder nebeneinander angezeigt
 - Johannes Vos
 - Khai-Phong Nguyen
 - Felix Kirmaier
-- Muhammed
+- Muhamed Saleh
 
 ## Lizenz
+
 
