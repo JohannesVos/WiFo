@@ -39,7 +39,7 @@ Für die Datenvorverarbeitung und statistische Verunreinigung der Trainingsdaten
 
 1. Stellen Sie sicher, dass Ihr Trainingsdatensatz und Testdatensatz ordnungsgemäß vorbereitet sind. Sie müssen die Pfade zu den Ordnern angeben, in denen die Bilder gespeichert sind.
 
-2. Öffnen Sie die Datei train.py und geben Sie den Pfad zu Ihrem Trainingsdatensatz und Testdatensatz im Abschnitt "Definieren des Trainingsdatensatzes und Testdatensatzes über die Pfade" an.
+2. Öffnen Sie die Datei [Train.py](https://github.com/JohannesVos/WiFo/blob/main/src/Train.py) und geben Sie den Pfad zu Ihrem Trainingsdatensatz und Testdatensatz im Abschnitt "Definieren des Trainingsdatensatzes und Testdatensatzes über die Pfade" an.
 
 3. Sie können die Parameter für die Bildvorverarbeitung und das Training des Autoencoders im Code anpassen, wenn gewünscht. Dazu gehören IMG_RESIZE, BATCH_SIZE, NUM_EPOCHS, usw.
 
