@@ -51,7 +51,7 @@ Für die Datenvorverarbeitung und statistische Verunreinigung der Trainingsdaten
 
 Dieser Code definiert einen Autoencoder in PyTorch, der aus einem Encoder und einem Decoder besteht. Der Encoder komprimiert die Eingabedaten in eine kleinere Darstellung durch eine Reihe von Convolutional Neural Networks (CNNs), während der Decoder diese komprimierte Darstellung nimmt und versucht, die ursprünglichen Daten zu rekonstruieren.
 
-Die Strukturähnlichkeitsmetrik (SSIM) wird zur Bewertung der Qualität der rekonstruierten Bilder verwendet. Im Gegensatz zum Mean Squared Error (MSE) berücksichtigt SSIM sowohl die Pixelunterschiede als auch die strukturellen Informationen in den Bildern, was zu einer besseren Übereinstimmung mit der menschlichen Wahrnehmung von Bildqualität führt. Daher kann die Verwendung von SSIM als Verlustfunktion dazu führen, dass der Autoencoder Bilder erzeugt, die natürlicher und realistischer aussehen. Die genaue Struktur ist im Codedatei Train.py wiederzufinden.
+Die Strukturähnlichkeitsmetrik (SSIM) wird zur Bewertung der Qualität der rekonstruierten Bilder verwendet. Im Gegensatz zum Mean Squared Error (MSE) berücksichtigt SSIM sowohl die Pixelunterschiede als auch die strukturellen Informationen in den Bildern, was zu einer besseren Übereinstimmung mit der menschlichen Wahrnehmung von Bildqualität führt. Daher kann die Verwendung von SSIM als Verlustfunktion dazu führen, dass der Autoencoder Bilder erzeugt, die natürlicher und realistischer aussehen. Die genaue Struktur ist im Codedatei [Train.py](https://github.com/JohannesVos/WiFo/blob/main/src/Train.py) wiederzufinden.
 
 ## Ergebnisse
 
