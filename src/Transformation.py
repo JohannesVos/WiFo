@@ -4,57 +4,54 @@ import shutil
 from PIL import Image
 from torchvision import transforms
 
-# Sharpening factor
+# Schärfefaktor
 kernel_size = 15
 
-# Define your transformations
+# Definiere deine Transformationen
 transformations = [
-    #transforms.GaussianBlur(kernel_size, sigma=(3.0, 3.0)),
-    #transforms.ColorJitter(brightness=0.4),
-    #transforms.deleteRandomPixels(66)
-    transforms.Grayscale(),
-    transforms.Resize(256)
-    ]
+    #transforms.GaussianBlur(kernel_size, sigma=(3.0, 3.0)),   # Gausscher Weichzeichner
+    #transforms.ColorJitter(brightness=0.4),                   # Helligkeitsvariation
+    #transforms.deleteRandomPixels(66)                         # Zufälliges Entfernen von Pixeln
+    transforms.Grayscale(),                                    # Umwandlung in Graustufen
+    transforms.Resize(256)                                     # Größenänderung auf 256x256 Pixel
+]
 
-
-# Specify the input folder path
+# Gib den Pfad zum Eingabeordner an
 input_folder = r"C:\Users\johan\Desktop\bottle\test_merged"
 
-# Specify the output folder path for the transformed images
+# Gib den Pfad zum Ausgabeordner für die transformierten Bilder an
 output_folder = r"C:\Users\johan\Desktop\bottle\test_merged_transformed"
 
-# Create the output folder if it doesn't exist
+# Erstelle den Ausgabeordner, wenn er noch nicht existiert
 os.makedirs(output_folder, exist_ok=True)
 
-# Get the list of image files in the input folder
+# Erhalte eine Liste der Bilddateien im Eingabeordner
 image_files = [file for file in os.listdir(input_folder) if file.endswith(('.jpg', '.jpeg', '.png'))]
 
-# Calculate the number of images to transform (x% of the dataset)
-num_images = int(len(image_files) *1)
+# Berechne die Anzahl der zu transformierenden Bilder (x% des Datensatzes)
+num_images = int(len(image_files) * 1)
 
-# Randomly select image files for the subset
+# Wähle zufällig Bilder für den Teil-Datensatz aus
 subset_image_files = random.sample(image_files, num_images)
 
-# Apply the transformation to the subset of images and save them in the output folder
+# Wende die Transformationen auf den Teil-Datensatz an und speichere sie im Ausgabeordner
 for image_file in subset_image_files:
-    # Load the image
+    # Lade das Bild
     image_path = os.path.join(input_folder, image_file)
     image = Image.open(image_path)
     transformed_image = image
 
-    # Apply the transformations to the image one by one
+    # Wende die Transformationen nacheinander auf das Bild an
     for transformation in transformations:
         transformed_image = transformation(transformed_image)
 
-    # Save the transformed image in the output folder
+    # Speichere das transformierte Bild im Ausgabeordner
     output_image_path = os.path.join(output_folder, image_file)
     transformed_image.save(output_image_path)
 
-# Copy the remaining images from the input folder to the output folder
+# Kopiere die restlichen Bilder vom Eingabeordner in den Ausgabeordner
 for image_file in image_files:
     if image_file not in subset_image_files:
         input_image_path = os.path.join(input_folder, image_file)
         output_image_path = os.path.join(output_folder, image_file)
         shutil.copyfile(input_image_path, output_image_path)
-
-
