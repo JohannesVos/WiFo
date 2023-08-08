@@ -6,6 +6,7 @@ Dieses Repository enthält den Code und das Modelle für einen Convolutional Aut
 
 - [Beschreibung](#beschreibung)
 - [Voraussetzungen](#voraussetzungen)
+- [Datenvorverarbeitung](#datenvorverarbeitung)
 - [Verwendung](#verwendung)
 - [Modell](#modell)
 - [Ergebnisse](#ergebnisse)
@@ -30,6 +31,9 @@ Um den Code in diesem Repository auszuführen, sind die folgenden Voraussetzunge
 - Matplotlib
 - scikit-image
 - pytorch-msssim
+
+## Datenvorverarbeitung
+Für die Datenvorverarbeitung und statistische Verunreinigung der Trainingsdaten wird die Datei Transformation.py benötigt. In diesem Code werden eine Reihe von Bildtransformationen auf eine Teilmenge von Trainingsbildern im angegebenen Eingabeordner angewendet. Die transformierten Bilder werden anschließend im angegebenen Ausgabeordner gespeichert und können für das Training des Autoencoders verwendet werden. Separat von dem Trainingsdatensatz, der nur intakte Schrauben enthält, stellt der Datensatz [Screw (186 MB)](https://www.mvtec.com/company/research/datasets/mvtec-ad/downloads) auch gelabelte Testdaten zur Verfügung. Diese Testdaten können verwendet werden, um die Leistungsfähigkeit des Autoencoders zu überprüfen.
 
 ## Verwendung
 
