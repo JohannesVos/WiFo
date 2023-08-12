@@ -11,7 +11,6 @@ Dieses Repository enthält den Code und das Modelle für einen Convolutional Aut
 - [Modell](#modell)
 - [Ergebnisse](#ergebnisse)
 - [Autoren](#autoren)
-- [Lizenz](#lizenz)
 
 ## Beschreibung
 
@@ -67,6 +66,6 @@ Es werden die orginalen, rekonstruierten und SSIM Bilder nebeneinander angezeigt
 - Felix Kirmaier
 - Muhamed Saleh
 
-## Lizenz
+
 
 
