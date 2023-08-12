@@ -21,7 +21,7 @@ Dieses Projekt verwendet einen CAE, um Bilder zu rekonstruieren. Der Autoencoder
 
 ## Voraussetzungen
 
-Um den Code in diesem Repository auszuführen, sind die folgenden Voraussetzungen erforderlich:
+Um den Code in diesem Repository auszuführen, sind die folgenden Voraussetzungen erforderlich: 
 
 - Python 3.7 oder höher
 - PyTorch
