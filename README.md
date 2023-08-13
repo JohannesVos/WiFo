@@ -1,6 +1,6 @@
 # Autoencoder für die Anomalieerkennung
 
-Dieses Repository enthält den Code und das Modelle für einen Convolutional Autoencoder (CAE), der für die Rekonstruktion von Bildern verwendet wird. Der Autoencoder wurde mit PyTorch implementiert und trainiert und anschließend für die Anomalieerkennung verwendet. Der Datensatz, der für dieses Projekt verwendet wurde findet sich unter dem folgendem Link [Screw (186 MB)](https://www.mvtec.com/company/research/datasets/mvtec-ad/downloads). Ziel des Projektes ist es den Einfluss von Attribute Noise auf die Anomalieerkennung mithilfe eines CAE zu untersuchen. Hierzu wurden die Trainingsdatenmithilfe des Programms "Transformation.py" verunreinigt. 
+Dieses Repository enthält den Code und das Modell für einen Convolutional Autoencoder (CAE), der für die Rekonstruktion von Bildern verwendet wird. Der Autoencoder wurde mit PyTorch implementiert und trainiert und anschließend für die Anomalieerkennung verwendet. Der Datensatz, der für dieses Projekt verwendet wurde findet sich unter dem folgendem Link [Screw (186 MB)](https://www.mvtec.com/company/research/datasets/mvtec-ad/downloads). Ziel des Projektes ist es den Einfluss von Attribute Noise auf die Anomalieerkennung mithilfe eines CAE zu untersuchen. Hierzu wurden die Trainingsdatenmithilfe des Programms "Transformation.py" verunreinigt. 
 
 ## Inhaltsverzeichnis
 
